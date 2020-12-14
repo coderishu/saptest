@@ -1,0 +1,24 @@
+.button{
+    width: 50%;
+    padding: 7px 4px;
+    margin: 12px 39px;
+    background: lightgreen;
+    border-radius: 9px;
+    cursor: pointer;
+}
+label{
+    margin: 0 auto;
+    display: table;
+    border-bottom: 2px solid dodgerblue;
+}
+.success_landing_inside{
+display: flex;
+margin: 0 auto;
+}
+.active{
+    background-color: greenyellow;
+}
+.button:focus{
+    outline: none;
+}
+

@@ -1,0 +1,6 @@
+<span class="filters">Filters</span>
+<label>Launch Year</label>
+<div class="filter_child">
+<button *ngFor="let year of response" class="button" (click)="selectYear(year)" [class.active]="selectedyear==year">{{year}}</button>
+<ng-content></ng-content>
+</div>

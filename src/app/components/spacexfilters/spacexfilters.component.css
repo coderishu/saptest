@@ -1,0 +1,33 @@
+.filter_child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.button{
+    width: 32%;
+    padding: 6px 4px;
+    margin: 5px 6px;
+    background: lightgreen;
+    border-radius: 9px;
+    cursor: pointer;
+    outline: none;
+}
+label{
+    margin: 0 auto;
+    display: table;
+    border-bottom: 2px solid dodgerblue;
+}
+.filters{
+    padding: 0px;
+    position: relative;
+    top: 23px;
+    font-weight: bold;
+    margin: 0px 27px;
+}
+
+.active{
+    background-color: greenyellow;
+}
+.button:focus{
+    outline: none;
+}

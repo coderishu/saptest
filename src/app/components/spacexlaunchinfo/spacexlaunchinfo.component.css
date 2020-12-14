@@ -1,0 +1,58 @@
+.parent{
+    display: flex;
+}
+.filters{
+    width: 30%;
+    height: 100vh;
+    background-color:white;
+    border: 7px solid lightgray !important;
+}
+.info{
+    width: 70%;
+    height: 400px
+}
+.item{
+    width: 25%;
+    display: inline-block;
+    background: white;
+}
+.image{
+    width: 161px !important;
+    height: 161px !important;
+    background: lightgrey;
+    margin: 10px;
+    padding: 10px;
+}
+.launch_year,.success_landing{
+    display: inline-block;
+    font-weight: bold;
+}
+.no_id{
+    display: block;
+    font-weight: bold;
+}
+.mission_id{
+    display: block;
+    font-weight: bold;
+}
+.item_id{
+    list-style-type: decimal-leading-zero;
+}
+.mission_name{
+    color: blue;
+    font-size: 18px;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inner{
+    margin: 0 14px;
+}
+.success_launch{
+    display: inline-block;
+    font-weight: bold;
+}
+.notfound{
+    width: 100%;
+}

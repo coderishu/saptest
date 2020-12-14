@@ -1,0 +1,48 @@
+.error_section_background{
+	background-color:#e3e4e8;
+	padding:10px;
+}
+.card{
+    background-color:white;
+    height: 100vh;
+	/* margin:15px; */
+}
+ .error_section{
+	text-align: center;
+	padding: 20px;
+}
+.error_image{
+	width:200px;
+	margin:20px auto;
+}
+.error_image img{
+	width:100%;
+}
+.error_section h3{
+	width:100%;
+	font-weight:bold; 
+}
+.error_section p{
+	font-family: AirbnbCerealApp-Bold;
+	width:100%;
+	font-size: 16px;
+	color:gray;
+	margin: 0 auto;
+}
+.refresh_btn{
+	width:115px;
+	background-color: #0056b8;
+	color: wheat;
+	border-radius: 20px;
+	border:0;
+	outline:none;
+	padding:10px;
+	margin: 15px;
+	font-size: 14px;
+	font-weight: bold;
+  -webkit-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+.refresh_btn:hover{
+	background-color:#0077ff;
+}
