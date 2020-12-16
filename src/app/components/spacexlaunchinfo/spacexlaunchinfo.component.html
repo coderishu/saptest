@@ -38,7 +38,10 @@
           <span class="success_launch">Successfull Launch : </span>
           <span class="launch_value">{{ instance.launch_success }}</span>
           <span class="success_landing">Successfull Landing : </span>
-          <span class="land_value">True</span>
+          <span class="land_value">{{
+            instance.rocket.first_stage.cores[0].land_success ||
+              "Value Not Present"
+          }}</span>
         </div>
       </div>
     </ng-container>
