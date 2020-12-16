@@ -1,58 +1,70 @@
-.parent{
-    display: flex;
+.parent {
+  display: flex;
+  position: relative;
+  padding-bottom: 30px;
+  min-height: 500px;
 }
-.filters{
-    width: 30%;
-    height: 100vh;
-    background-color:white;
-    border: 7px solid lightgray !important;
+
+.filters {
+  width: 30%;
+  height: 100vh;
+  background-color: white;
+  border: 7px solid lightgray !important;
 }
-.info{
-    width: 70%;
-    height: 400px
+.info {
+  width: 70%;
+  /* height: 400px; */
 }
-.item{
-    width: 25%;
-    display: inline-block;
-    background: white;
+.item {
+  width: 24%;
+  display: inline-block;
+  background: white;
+  border: 4px solid #d3d3d3;
 }
-.image{
-    width: 161px !important;
-    height: 161px !important;
-    background: lightgrey;
-    margin: 10px;
-    padding: 10px;
+.image {
+  width: 161px !important;
+  height: 161px !important;
+  background: lightgrey;
+  margin: 10px;
+  padding: 10px;
 }
-.launch_year,.success_landing{
-    display: inline-block;
-    font-weight: bold;
+.launch_year,
+.success_landing {
+  display: inline-block;
+  font-weight: bold;
 }
-.no_id{
-    display: block;
-    font-weight: bold;
+.no_id {
+  display: block;
+  font-weight: bold;
 }
-.mission_id{
-    display: block;
-    font-weight: bold;
+.mission_id {
+  display: block;
+  font-weight: bold;
 }
-.item_id{
-    list-style-type: decimal-leading-zero;
+.item_id {
+  list-style-type: decimal-leading-zero;
+  color: blue;
 }
-.mission_name{
-    color: blue;
-    font-size: 18px;
+.mission_name {
+  color: blue;
+  font-size: 18px;
 }
-.info{
-    display: flex;
-    flex-wrap: wrap;
+.info {
+  display: flex;
+  flex-wrap: wrap;
 }
-.inner{
-    margin: 0 14px;
+.inner {
+  margin: 0 14px;
 }
-.success_launch{
-    display: inline-block;
-    font-weight: bold;
+.success_launch {
+  display: inline-block;
+  font-weight: bold;
 }
-.notfound{
-    width: 100%;
+.notfound {
+  width: 100%;
+}
+.dev_name {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
 }

@@ -1,38 +1,52 @@
 <div class="parent">
-<div class="filters">
+  <div class="filters">
     <app-spacexfilters (updatedYear)="updatedYear($event)"></app-spacexfilters>
-        <app-spacex-successfull-launch (updatedValue)="updatedValue($event)"></app-spacex-successfull-launch>
-        <app-spacex-successfull-landing (updatedLandingValue)="updatedLandingValue($event)"></app-spacex-successfull-landing>
-</div>
-<div class="info">
-    <ng-container *ngIf="response.length>0;else notfound">
-    <div class="item" *ngFor="let instance of response;let index=index">
-        <img [src]="instance.links.mission_patch_small" alt="image" class="image">
-       <div class="inner">
-        <span class="mission_name">{{instance.mission_name}} #{{index+1}}</span>
-        <span *ngIf="instance.mission_id.length >0;else noid" class="mission_id">Mission ids
-        <ul>
-            <li *ngFor="let id of instance.mission_id" class="item_id">
-               {{id}} 
-            </li>
-        </ul>
-    </span>
-        <ng-template #noid>
+    <app-spacex-successfull-launch
+      (updatedValue)="updatedValue($event)"
+    ></app-spacex-successfull-launch>
+    <app-spacex-successfull-landing
+      (updatedLandingValue)="updatedLandingValue($event)"
+    ></app-spacex-successfull-landing>
+  </div>
+  <div class="info">
+    <ng-container *ngIf="response.length > 0; else notfound">
+      <div class="item" *ngFor="let instance of response; let index = index">
+        <img
+          [src]="instance.links.mission_patch_small"
+          alt="image"
+          class="image"
+        />
+        <div class="inner">
+          <span class="mission_name"
+            >{{ instance.mission_name }} #{{ index + 1 }}</span
+          >
+          <span
+            *ngIf="instance.mission_id.length > 0; else noid"
+            class="mission_id"
+            >Mission ids :
+            <ul>
+              <li *ngFor="let id of instance.mission_id" class="item_id">
+                {{ id }}
+              </li>
+            </ul>
+          </span>
+          <ng-template #noid>
             <span class="no_id">No Mission Id Present</span>
-        </ng-template>
-        <span class="launch_year">Launch Year : </span>
-        <span>{{instance.launch_year}}</span>
-        <span class="success_launch">Successfull Launch : </span>
-        <span>{{instance.launch_success}}</span>
-        <span class="success_landing">Successfull Landing : </span>
-        <span>True</span>
-       </div>
-    </div>
-</ng-container>
-<ng-template #notfound>
-    <div class="notfound">
+          </ng-template>
+          <span class="launch_year">Launch Year : </span>
+          <span>{{ instance.launch_year }}</span>
+          <span class="success_launch">Successfull Launch : </span>
+          <span class="launch_value">{{ instance.launch_success }}</span>
+          <span class="success_landing">Successfull Landing : </span>
+          <span class="land_value">True</span>
+        </div>
+      </div>
+    </ng-container>
+    <ng-template #notfound>
+      <div class="notfound">
         <app-not-found></app-not-found>
-    </div>
-</ng-template>
-</div>
+      </div>
+    </ng-template>
+  </div>
+  <div class="dev_name"><b>Developed by : </b> Ishu Mishra</div>
 </div>

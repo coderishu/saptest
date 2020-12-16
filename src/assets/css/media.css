@@ -1,11 +1,39 @@
+@media only screen and (max-width: 1440px) {
+  .filters {
+    width: 30%;
+    height: 100vh;
+  }
+  .item {
+    width: 23% !important;
+    /* text-align: center; */
+  }
+  .info {
+    width: 70%;
+  }
+  .item_id {
+    list-style-type: none !important;
+  }
+  .success_launch {
+    display: block !important;
+  }
+  /* .launch_value {
+  float: right;
+  margin-top: -26px;
+}
+.land_value {
+  float: right;
+  margin-top: 19px;
+} */
+}
+
 @media only screen and (max-width: 1024px) {
   .filters {
     width: 50%;
     height: 100vh;
   }
   .item {
-    width: 50% !important;
-    text-align: center;
+    width: 46% !important;
+    /* text-align: center; */
   }
   .info {
     width: 50%;
